@@ -1,177 +1,267 @@
-<p align="center">
-  <img src="public/gitforum-logo.png" alt="GitForum Logo" width="120" />
-</p>
+<div align="center">
 
-<h1 align="center">🚀 GitForum</h1>
+<img src="public/gitforum-logo.png" alt="GitForum" width="100" />
 
-<p align="center">
-  <b>A modern developer community platform with code sharing, discussions, and AI assistance</b>
-</p>
+# GitForum
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=nextdotjs" />
-  <img src="https://img.shields.io/badge/Django-5.0-092E20?style=for-the-badge&logo=django" />
-  <img src="https://img.shields.io/badge/PostgreSQL-15-336791?style=for-the-badge&logo=postgresql" />
-  <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript" />
-  <img src="https://img.shields.io/badge/TailwindCSS-4.0-06B6D4?style=for-the-badge&logo=tailwindcss" />
-</p>
+**A modern developer community platform for sharing code, discussions, and collaboration**
 
----
+[![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![Django](https://img.shields.io/badge/Django_5.0-092E20?style=flat-square&logo=django&logoColor=white)](https://djangoproject.com/)
+[![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)](https://postgresql.org/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-## 📸 Screenshots
+<br />
 
-<!-- Replace with actual screenshots -->
+[Features](#features) · [Tech Stack](#tech-stack) · [Installation](#installation) · [Русский](#русский)
 
-| Landing Page | Feed |
-|:---:|:---:|
-| ![Landing Page](docs/screenshots/landing.png) | ![Feed](docs/screenshots/feed.png) |
+<br />
 
-| Post Detail | Profile |
-|:---:|:---:|
-| ![Post Detail](docs/screenshots/post-detail.png) | ![Profile](docs/screenshots/profile.png) |
+</div>
 
----
+<!-- ═══════════════════════════════════════════════════════ -->
 
-## 🇬🇧 English
+## Preview
 
-### ✨ Features
+<table>
+<tr>
+<td width="50%">
 
-#### 👥 User System
-- **JWT Authentication** — Secure token-based login & registration
-- **OAuth Integration** — Sign in with Google, GitHub, GitLab, and Discord
-- **User Profiles** — Customizable profiles with avatars, bio, and activity stats
-- **Password Recovery** — Email-based password reset flow
+<img src="docs/screenshots/landing.png" alt="Landing Page" width="100%" />
+<p align="center"><sub><b>Landing Page</b></sub></p>
 
-#### 📝 Content & Community
-- **Code Posts** — Share code snippets with syntax highlighting (powered by Shiki)
-- **Rich Comments** — Threaded comment system with nested replies
-- **Likes & Bookmarks** — Save and organize favorite posts
-- **Tags & Categories** — Browse posts by programming language and topic
-- **Trending & Explore** — Discover popular posts and new content
-- **User Feed** — Personalized content feed
+</td>
+<td width="50%">
 
-#### 🤖 AI Assistant
-- **Built-in AI Chat** — Powered by Groq (Llama 3.1) for instant coding help
-- **Multilingual** — Supports Russian and Kazakh languages
+<img src="docs/screenshots/feed.png" alt="Feed" width="100%" />
+<p align="center"><sub><b>Content Feed</b></sub></p>
 
-#### 🎨 UI/UX
-- **Dark/Light Theme** — Seamless theme switching with next-themes
-- **Responsive Design** — Mobile-first, works on all devices
-- **Bilingual Interface** — Full Russian & Kazakh localization
-- **Code Highlighting** — Beautiful syntax highlighting with customizable themes
-- **Modern Components** — Built with Radix UI primitives
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-#### ⚙️ Settings & Customization
-- **Account Settings** — Update email, password, and linked OAuth accounts
-- **Appearance Settings** — Theme, font size, and code display preferences
-- **Notification Preferences** — Fine-grained notification controls
-- **Profile Editing** — Edit display name, bio, links, and avatar
+<img src="docs/screenshots/post-detail.png" alt="Post Detail" width="100%" />
+<p align="center"><sub><b>Post Detail</b></sub></p>
 
----
+</td>
+<td width="50%">
 
-### 🛠️ Tech Stack
+<img src="docs/screenshots/profile.png" alt="User Profile" width="100%" />
+<p align="center"><sub><b>User Profile</b></sub></p>
 
-#### Frontend
-| Technology | Purpose |
-|---|---|
-| **Next.js 16** | React framework with App Router, SSR/SSG |
-| **React 19** | UI library with latest features |
-| **TypeScript 5** | Type-safe development |
-| **Tailwind CSS 4** | Utility-first styling |
-| **Radix UI** | Accessible, unstyled component primitives |
-| **Shiki** | Code syntax highlighting |
-| **Lucide React** | Beautiful icon library |
-| **Recharts** | Data visualization & charts |
-| **React Hook Form + Zod** | Form handling & validation |
-| **next-themes** | Dark/light mode management |
+</td>
+</tr>
+</table>
 
-#### Backend
-| Technology | Purpose |
-|---|---|
-| **Django 5.0** | Python web framework |
-| **Django REST Framework** | RESTful API |
-| **SimpleJWT** | JWT token authentication |
-| **django-allauth** | OAuth social authentication |
-| **PostgreSQL** | Primary database |
-| **Pillow** | Image processing |
-| **django-filter** | API filtering |
-| **django-cors-headers** | Cross-origin resource sharing |
+<!-- ═══════════════════════════════════════════════════════ -->
 
----
+## Features
 
-### 📦 Installation Guide
+<table>
+<tr>
+<td>
 
-#### Prerequisites
-- **Node.js** ≥ 18.x
-- **Python** ≥ 3.10
-- **PostgreSQL** ≥ 14
-- **Git**
+### Authentication & Users
 
-#### 1. Clone the Repository
+</td>
+<td>
+
+### Content & Community
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+- JWT-based secure authentication
+- OAuth sign-in — Google, GitHub, GitLab, Discord
+- Customizable user profiles with avatars
+- Email-based password recovery
+
+</td>
+<td valign="top">
+
+- Code posts with syntax highlighting
+- Threaded comment system
+- Likes, bookmarks, and sharing
+- Tag-based content organization
+
+</td>
+</tr>
+<tr>
+<td>
+
+### Discovery & Navigation
+
+</td>
+<td>
+
+### AI & Localization
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+- Personalized content feed
+- Trending posts and explore page
+- Filter by language, tags, and popularity
+- Responsive mobile-first design
+
+</td>
+<td valign="top">
+
+- Built-in AI assistant (Groq / Llama 3.1)
+- Full Russian and Kazakh interface
+- Dark and light themes
+- Customizable code display settings
+
+</td>
+</tr>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+
+## Tech Stack
+
+### Frontend
+
+<table>
+<tr>
+<td align="center" width="100">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="36" /><br />
+<sub><b>Next.js 16</b></sub>
+</td>
+<td align="center" width="100">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="36" /><br />
+<sub><b>React 19</b></sub>
+</td>
+<td align="center" width="100">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="36" /><br />
+<sub><b>TypeScript</b></sub>
+</td>
+<td align="center" width="100">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="36" /><br />
+<sub><b>Tailwind 4</b></sub>
+</td>
+<td align="center" width="100">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/radixui/radixui-original.svg" width="36" /><br />
+<sub><b>Radix UI</b></sub>
+</td>
+</tr>
+</table>
+
+| Dependency | Role |
+|:---|:---|
+| `shiki` | Code syntax highlighting with theme support |
+| `lucide-react` | Icon library |
+| `recharts` | Data visualization |
+| `react-hook-form` + `zod` | Form handling and validation |
+| `next-themes` | Theme management (dark/light) |
+| `sonner` | Toast notifications |
+
+### Backend
+
+<table>
+<tr>
+<td align="center" width="100">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="36" /><br />
+<sub><b>Django 5</b></sub>
+</td>
+<td align="center" width="100">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/djangorest/djangorest-original.svg" width="36" /><br />
+<sub><b>DRF</b></sub>
+</td>
+<td align="center" width="100">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="36" /><br />
+<sub><b>PostgreSQL</b></sub>
+</td>
+<td align="center" width="100">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="36" /><br />
+<sub><b>Python 3.10+</b></sub>
+</td>
+</tr>
+</table>
+
+| Dependency | Role |
+|:---|:---|
+| `djangorestframework-simplejwt` | JWT token authentication |
+| `django-allauth` | Social OAuth (Google, GitHub, GitLab, Discord) |
+| `django-cors-headers` | CORS configuration |
+| `django-filter` | API query filtering |
+| `Pillow` | Image processing and uploads |
+
+<!-- ═══════════════════════════════════════════════════════ -->
+
+## Installation
+
+### Prerequisites
+
+| Tool | Version |
+|:---|:---|
+| Node.js | >= 18.x |
+| Python | >= 3.10 |
+| PostgreSQL | >= 14 |
+
+### 1 — Clone
 
 ```bash
 git clone https://github.com/Ataniyaz228/Git-forum.git
 cd Git-forum
 ```
 
-#### 2. Frontend Setup
+### 2 — Frontend
 
 ```bash
-# Install dependencies
 npm install
-
-# Create environment file
 cp .env.example .env.local
-
-# Edit .env.local and add your API keys
-# NEXT_PUBLIC_GROQ_API_KEY=your_groq_api_key
 ```
 
-#### 3. Backend Setup
+> Open `.env.local` and set your Groq API key ([console.groq.com](https://console.groq.com))
+
+### 3 — Backend
 
 ```bash
 cd backend
-
-# Create virtual environment
 python -m venv venv
 
-# Activate virtual environment
-# Windows:
+# Windows
 venv\Scripts\activate
-# macOS/Linux:
+# macOS / Linux
 source venv/bin/activate
 
-# Install dependencies
 pip install -r requirements.txt
-
-# Create environment file
 cp env.template .env
 ```
 
-#### 4. Configure Environment Variables
+> Open `backend/.env` and configure the database, OAuth credentials, and email settings
 
-Edit `backend/.env`:
+<details>
+<summary><b>Environment variables reference</b></summary>
 
 ```env
 # Django
 DEBUG=True
-SECRET_KEY=your-secret-key-here
+SECRET_KEY=your-secret-key
 
-# Database (PostgreSQL)
+# Database
 DATABASE_NAME=gitforum
 DATABASE_USER=postgres
 DATABASE_PASSWORD=your_password
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
 
-# Frontend URL
+# Frontend
 FRONTEND_URL=http://localhost:3000
 
 # OAuth (optional)
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-GITHUB_CLIENT_ID=your_github_client_id
-GITHUB_CLIENT_SECRET=your_github_client_secret
+GOOGLE_CLIENT_ID=...
+GOOGLE_CLIENT_SECRET=...
+GITHUB_CLIENT_ID=...
+GITHUB_CLIENT_SECRET=...
 
 # Email (for password recovery)
 EMAIL_HOST=smtp.gmail.com
@@ -180,216 +270,237 @@ EMAIL_HOST_USER=your_email@gmail.com
 EMAIL_HOST_PASSWORD=your_app_password
 ```
 
-#### 5. Database Setup
+</details>
+
+### 4 — Database
 
 ```bash
-# Create PostgreSQL database
 psql -U postgres -c "CREATE DATABASE gitforum;"
-
-# Run migrations
 cd backend
 python manage.py migrate
-
-# Create superuser (optional)
-python manage.py createsuperuser
+python manage.py createsuperuser  # optional
 ```
 
-#### 6. Run the Application
+### 5 — Run
 
 ```bash
-# Terminal 1 — Backend (from /backend)
+# Terminal 1 — backend
+cd backend
 python manage.py runserver
 
-# Terminal 2 — Frontend (from root)
+# Terminal 2 — frontend
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser 🎉
+Open **http://localhost:3000**
 
----
+<!-- ═══════════════════════════════════════════════════════ -->
 
-### 📁 Project Structure
+## Project Structure
 
 ```
 Git-forum/
-├── app/                    # Next.js App Router pages
-│   ├── auth/               # Auth callback page
-│   ├── bookmarks/          # Bookmarks page
-│   ├── explore/            # Explore & discover
-│   ├── feed/               # User feed
-│   ├── login/              # Login page
-│   ├── register/           # Registration page
-│   ├── post/               # Post detail page
-│   ├── profile/            # User profile
-│   ├── settings/           # Settings page
-│   ├── tags/               # Tags browsing
-│   ├── trending/           # Trending posts
-│   └── page.tsx            # Landing page
-├── backend/                # Django backend
-│   ├── gitforum/           # Django project settings
-│   ├── posts/              # Posts app (models, views, API)
-│   ├── users/              # Users app (auth, OAuth, profiles)
-│   └── manage.py
-├── components/             # React components
-│   ├── ui/                 # Radix UI primitives
-│   ├── navbar.tsx          # Navigation bar
-│   ├── ai-assistant-widget.tsx  # AI chat widget
-│   ├── comments.tsx        # Comment system
+├── app/                         # Next.js pages (App Router)
+│   ├── auth/                    # OAuth callback
+│   ├── bookmarks/               # Saved posts
+│   ├── explore/                 # Discover content
+│   ├── feed/                    # Personalized feed
+│   ├── login/ & register/       # Authentication
+│   ├── post/                    # Post detail
+│   ├── profile/                 # User profile
+│   ├── settings/                # User settings
+│   ├── tags/ & trending/        # Browse & discover
+│   └── page.tsx                 # Landing page
+│
+├── components/                  # React components
+│   ├── ui/                      # Radix UI primitives
+│   ├── navbar.tsx               # Navigation
+│   ├── ai-assistant-widget.tsx  # AI chat
+│   ├── comments.tsx             # Comment system
 │   └── ...
-├── contexts/               # React contexts
-│   ├── AuthContext.tsx      # Authentication state
-│   ├── LanguageContext.tsx  # i18n (RU/KZ)
-│   └── CodeSettingsContext.tsx  # Code display settings
-├── hooks/                  # Custom React hooks
-├── lib/                    # Utilities & API client
-└── public/                 # Static assets
+│
+├── contexts/                    # React context providers
+│   ├── AuthContext.tsx           # Auth state
+│   ├── LanguageContext.tsx       # i18n (RU / KZ)
+│   └── CodeSettingsContext.tsx   # Code display prefs
+│
+├── backend/                     # Django API
+│   ├── posts/                   # Posts app
+│   ├── users/                   # Users & auth app
+│   └── gitforum/                # Project config
+│
+└── public/                      # Static assets
 ```
 
 ---
 
-## 🇷🇺 Русский
+<br />
 
-### ✨ Возможности
+<div align="center">
 
-#### 👥 Система пользователей
-- **JWT Аутентификация** — безопасная авторизация на основе токенов
-- **OAuth** — вход через Google, GitHub, GitLab и Discord
-- **Профили** — настраиваемые профили с аватарами, био и статистикой
-- **Восстановление пароля** — сброс пароля через email
+# Русский
 
-#### 📝 Контент и сообщество
-- **Посты с кодом** — публикация сниппетов с подсветкой синтаксиса (Shiki)
-- **Комментарии** — древовидная система комментариев с вложенными ответами
-- **Лайки и закладки** — сохранение и организация избранных постов
-- **Теги и категории** — фильтрация по языкам программирования и темам
-- **Тренды и исследование** — подборка популярных постов
-- **Персональная лента** — индивидуальная лента контента
+</div>
 
-#### 🤖 AI Ассистент
-- **Встроенный AI чат** — на базе Groq (Llama 3.1) для помощи с кодом
-- **Мультиязычный** — поддержка русского и казахского языков
+<br />
 
-#### 🎨 Интерфейс
-- **Тёмная/светлая тема** — плавное переключение тем
-- **Адаптивный дизайн** — Mobile-first, работает на всех устройствах
-- **Двуязычный интерфейс** — полная локализация на русский и казахский языки
-- **Подсветка кода** — красивая подсветка синтаксиса с настраиваемыми темами
-- **Современные компоненты** — на основе Radix UI
+## Возможности
 
-#### ⚙️ Настройки
-- **Аккаунт** — обновление email, пароля и привязанных OAuth аккаунтов
-- **Внешний вид** — тема, размер шрифта, настройки отображения кода
-- **Уведомления** — гибкое управление уведомлениями
-- **Профиль** — редактирование имени, био, ссылок и аватара
+<table>
+<tr>
+<td>
 
----
+### Аутентификация
 
-### 🛠️ Технологический стек
+</td>
+<td>
 
-#### Фронтенд
+### Контент
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+- Безопасная JWT-аутентификация
+- OAuth — Google, GitHub, GitLab, Discord
+- Настраиваемые профили с аватарами
+- Восстановление пароля через email
+
+</td>
+<td valign="top">
+
+- Посты с подсветкой синтаксиса кода
+- Древовидные комментарии
+- Лайки, закладки и репосты
+- Организация контента по тегам
+
+</td>
+</tr>
+<tr>
+<td>
+
+### Навигация
+
+</td>
+<td>
+
+### AI и локализация
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+- Персональная лента контента
+- Тренды и страница исследования
+- Фильтрация по языкам и тегам
+- Адаптивный мобильный дизайн
+
+</td>
+<td valign="top">
+
+- Встроенный AI-ассистент (Groq / Llama 3.1)
+- Полный интерфейс на русском и казахском
+- Тёмная и светлая темы
+- Настройки отображения кода
+
+</td>
+</tr>
+</table>
+
+## Технологический стек
+
+### Фронтенд
+
 | Технология | Назначение |
-|---|---|
-| **Next.js 16** | React-фреймворк с App Router, SSR/SSG |
-| **React 19** | UI библиотека |
+|:---|:---|
+| **Next.js 16** | React-фреймворк с App Router |
+| **React 19** | UI-библиотека |
 | **TypeScript 5** | Типобезопасная разработка |
-| **Tailwind CSS 4** | Утилитарный CSS |
+| **Tailwind CSS 4** | Утилитарные стили |
 | **Radix UI** | Доступные UI-компоненты |
-| **Shiki** | Подсветка синтаксиса кода |
-| **Lucide React** | Библиотека иконок |
+| **Shiki** | Подсветка синтаксиса |
 | **Recharts** | Визуализация данных |
-| **React Hook Form + Zod** | Формы и валидация |
 
-#### Бэкенд
+### Бэкенд
+
 | Технология | Назначение |
-|---|---|
-| **Django 5.0** | Python веб-фреймворк |
+|:---|:---|
+| **Django 5.0** | Веб-фреймворк |
 | **Django REST Framework** | RESTful API |
-| **SimpleJWT** | JWT аутентификация |
-| **django-allauth** | OAuth социальная авторизация |
-| **PostgreSQL** | Основная база данных |
+| **SimpleJWT** | JWT-аутентификация |
+| **django-allauth** | Социальная авторизация |
+| **PostgreSQL** | База данных |
 | **Pillow** | Обработка изображений |
 
----
+## Установка
 
-### 📦 Руководство по установке
+### Требования
 
-#### Требования
-- **Node.js** ≥ 18.x
-- **Python** ≥ 3.10
-- **PostgreSQL** ≥ 14
-- **Git**
+| Инструмент | Версия |
+|:---|:---|
+| Node.js | >= 18.x |
+| Python | >= 3.10 |
+| PostgreSQL | >= 14 |
 
-#### 1. Клонирование репозитория
+### 1 — Клонирование
 
 ```bash
 git clone https://github.com/Ataniyaz228/Git-forum.git
 cd Git-forum
 ```
 
-#### 2. Настройка фронтенда
+### 2 — Фронтенд
 
 ```bash
-# Установка зависимостей
 npm install
-
-# Создание файла окружения
 cp .env.example .env.local
-
-# Отредактируйте .env.local и добавьте API ключи
 ```
 
-#### 3. Настройка бэкенда
+> Откройте `.env.local` и укажите ваш Groq API ключ
+
+### 3 — Бэкенд
 
 ```bash
 cd backend
-
-# Создание виртуального окружения
 python -m venv venv
-
-# Активация (Windows)
-venv\Scripts\activate
-
-# Установка зависимостей
+venv\Scripts\activate          # Windows
 pip install -r requirements.txt
-
-# Создание файла окружения
 cp env.template .env
-# Отредактируйте .env — укажите данные БД и OAuth ключи
 ```
 
-#### 4. Настройка базы данных
+> Откройте `backend/.env` и настройте подключение к БД, OAuth и email
+
+### 4 — База данных
 
 ```bash
-# Создание базы данных PostgreSQL
 psql -U postgres -c "CREATE DATABASE gitforum;"
-
-# Применение миграций
+cd backend
 python manage.py migrate
-
-# Создание суперпользователя (опционально)
-python manage.py createsuperuser
+python manage.py createsuperuser  # опционально
 ```
 
-#### 5. Запуск
+### 5 — Запуск
 
 ```bash
-# Терминал 1 — Бэкенд (из папки /backend)
-python manage.py runserver
+# Терминал 1
+cd backend && python manage.py runserver
 
-# Терминал 2 — Фронтенд (из корня проекта)
+# Терминал 2
 npm run dev
 ```
 
-Откройте [http://localhost:3000](http://localhost:3000) в браузере 🎉
+Откройте **http://localhost:3000**
 
 ---
 
-## 📄 License
+<div align="center">
 
-This project is open source and available under the [MIT License](LICENSE).
+<br />
 
----
+**MIT License** · Made by [Ataniyaz](https://github.com/Ataniyaz228)
 
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/Ataniyaz228">Ataniyaz</a>
-</p>
+<br />
+
+</div>
