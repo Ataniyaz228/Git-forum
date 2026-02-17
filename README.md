@@ -148,7 +148,7 @@
 <sub><b>Tailwind 4</b></sub>
 </td>
 <td align="center" width="100">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/radixui/radixui-original.svg" width="36" /><br />
+<img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Flogowik.com%2Fcontent%2Fuploads%2Fimages%2Fradix-ui3498.logowik.com.webp&sp=1771300360Tc5675dde21fb21322f7cc34ab190db12d57c0e0e2d3ac3c7cf214c1dfe28ab25" width="36" /><br />
 <sub><b>Radix UI</b></sub>
 </td>
 </tr>
